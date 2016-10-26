@@ -70,6 +70,7 @@ router.get('/:id', function(req,res){
 
 });
 
+//get user message
 router.get('/:id/usermessage', function(req,res){
 	var id = req.params.id;
 	var objectId = new ObjectID(id);
@@ -90,7 +91,6 @@ router.get('/:id/usermessage', function(req,res){
 		}
 	});
 });
-
 
 
 module.exports = router;
