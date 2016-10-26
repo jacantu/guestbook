@@ -1,0 +1,25 @@
+extends layout
+
+block content
+
+  p test
+
+
+   table
+     thead
+        tr
+          td Name
+          td Email
+          td Message
+          td
+      tbody
+        each user, i in userlist
+         tr
+            td
+              =user.name
+            td
+              =user.email
+            td
+              =user.message
+            td
+              a.btn.btn-danger(href="/#{user._id}") Delete
